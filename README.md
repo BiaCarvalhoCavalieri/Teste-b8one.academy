@@ -2,6 +2,9 @@
 
 Este projeto foi desenvolvido para desktop com base no arquivo do figma disponibilizado e idealizado pela B8One.academy como teste do curso de formação em desenvolvimento Front-end.
 
+link do projeto: https://biacarvalhocavalieri.github.io/Teste-b8one.academy/
+link do figma: https://www.figma.com/file/Gd16BFyOoOQWfgJzhLALgk/Teste-b8one.academy?node-id=7%3A4929
+
 ## 🔧 Funcionabilidades
 
 ### Função 01:
