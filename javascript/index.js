@@ -43,12 +43,9 @@ adaptiveHeight: true
 const listBtnColors = document.querySelectorAll('.list-colors button')
 const imgProduct = document.getElementById('change-img-by-color')
 const colorName = document.querySelector('.color-name')
-
-console.log(colorName.textContent)
 listBtnColors.forEach(function (btnColor) {
   btnColor.addEventListener('click', function () {
     selectingImg(btnColor)
- 
   })
 })
 
@@ -57,15 +54,13 @@ function selectingImg(btnColor) {
   imgProduct.src = `./assets/images/${imgName}`
   changeColorSelected(btnColor)
   colorName.textContent = btnColor.id.toUpperCase()
-  //ZOOM
-  $('#product-img-container').zoom();
+  
+  
 }
 
 //SELECTING BUTTONS - Color and size of product
 
-
 function changeColorSelected(color) {
-  console.log(color)
   const buttonsColors = document.querySelectorAll('.list-colors button')
   buttonsColors.forEach(function (btnColor) {
     if (btnColor.classList.contains('selected')) {
@@ -74,17 +69,20 @@ function changeColorSelected(color) {
   })
 
    color.classList.add('selected')
+   //ZOOM
+   $('#product-img-container').zoom();
 }
-// function changeButtonColorByClick(size) {
-//   const buttonsSizes = document.querySelectorAll('.sizes button')
-//   buttonsSizes.forEach(function (btnSize) {
-//     if (btnSize.classList.contains('selectButton')) {
-//       btnSize.classList.remove('selectButton')
-//     }
-//   })
 
-//   size.classList.add('selectButton')
-// }
+function changeSizeSelectedColorByClick(size) {
+  const buttonsSizes = document.querySelectorAll('.product-sizes button')
+  buttonsSizes.forEach(function (btnSize) {
+    if (btnSize.classList.contains('selectButton')) {
+      btnSize.classList.remove('selectButton')
+    }
+  })
+
+  size.classList.add('selectButton')
+}
 
 
 //ZOOM
